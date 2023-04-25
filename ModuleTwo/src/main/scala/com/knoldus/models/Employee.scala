@@ -1,3 +1,4 @@
+
 package com.knoldus.models
 
 case class Employee(firstName: String,

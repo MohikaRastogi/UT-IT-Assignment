@@ -1,6 +1,7 @@
+
 package com.knoldus
 
-import com.knoldus.CheckPasswordStrength
+
 import org.scalatest.flatspec.AnyFlatSpec
 
 class CheckPasswordStrengthTest extends AnyFlatSpec {

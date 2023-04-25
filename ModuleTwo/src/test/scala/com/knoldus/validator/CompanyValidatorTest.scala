@@ -1,3 +1,4 @@
+
 package com.knoldus.validator
 
 import com.knoldus.models.Company
@@ -6,7 +7,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 class CompanyValidatorTest extends AnyFlatSpec {
   val validator = new CompanyValidator
 
-  "companyIsValid" should "return false if the company is already exists in data base and email is valid" in {
+  "companyIsValid" should "return false if the company already exists in data base and email is valid" in {
     val philipsCompany: Company = Company("Philips", "philips123@gmail.com", "Noida")
     assert(!validator.companyIsValid(philipsCompany))
   }
@@ -15,5 +16,4 @@ class CompanyValidatorTest extends AnyFlatSpec {
     val google: Company = Company("Google", "google123@gmail.com", "California")
     assert(validator.companyIsValid(google))
   }
-
 }

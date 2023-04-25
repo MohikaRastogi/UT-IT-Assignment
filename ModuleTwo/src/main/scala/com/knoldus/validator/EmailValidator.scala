@@ -1,3 +1,4 @@
+
 package com.knoldus.validator
 
 class EmailValidator {
